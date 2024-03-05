@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:macro name="roller" params="rim side xyz rpy">
+        <link name="${rim}_roller_${side}_link">
+            <visual>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <geometry>
+                    <mesh filename="package://omni_description/meshes/wheel/roller.stl" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+                <material name="black"/>
+            </visual>
+            <collision>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <geometry>
+                    <mesh filename="package://omni_description/meshes/wheel/roller.stl" scale="${scale} ${scale} ${scale}" />
+                </geometry>
+            </collision>
+            <inertial>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <mass value="${0.00113845 * scale}"/>
+                <inertia ixx="${2.53776e-08 * scale * scale}" ixy="0" ixz="0"
+                         iyy="${2.53776e-08 * scale * scale}" iyz="0"
+                         izz="${1.47666e-08 * scale * scale}"/>
+            </inertial>
+        </link>
+        <joint name="${rim}_rim_roller_${side}_joint" type="continuous">
+            <parent link="${rim}_rim_link"/>
+            <child link="${rim}_roller_${side}_link"/>
+            <origin xyz="${xyz}" rpy="${rpy}"/>
+            <axis xyz="0 0 1"/>
+        </joint>
+    </xacro:macro>
+
+    <xacro:roller rim="left" side="e"	xyz="${0.01355*scale}			${0*scale} 				${0.0055*scale}"	rpy="${-90*pi/180} 0 0" />
+    <xacro:roller rim="left" side="ne"	xyz="${0.00958129689*scale}		${0.00958129689*scale}	${-0.0055*scale}"	rpy="${-90*pi/180} 0 ${45*pi/180}" />
+    <xacro:roller rim="left" side="n"	xyz="${0*scale} 				${0.01355*scale} 		${0.0055*scale}"	rpy="${-90*pi/180} 0 ${90*pi/180}" />
+    <xacro:roller rim="left" side="nw"	xyz="${-0.00958129689*scale}	${0.00958129689*scale} 	${-0.0055*scale}"	rpy="${-90*pi/180} 0 ${135*pi/180}" />
+    <xacro:roller rim="left" side="w"	xyz="${-0.01355*scale}			${0*scale}				${0.0055*scale}"	rpy="${-90*pi/180} 0 ${180*pi/180}" />
+    <xacro:roller rim="left" side="sw"	xyz="${-0.00958129689*scale}	${-0.00958129689*scale}	${-0.0055*scale}"	rpy="${-90*pi/180} 0 ${225*pi/180}" />
+    <xacro:roller rim="left" side="s"	xyz="${0*scale}					${-0.01355*scale}		${0.0055*scale}"	rpy="${-90*pi/180} 0 ${270*pi/180}" />
+    <xacro:roller rim="left" side="se"	xyz="${0.00958129689*scale}		${-0.00958129689*scale}	${-0.0055*scale}"	rpy="${-90*pi/180} 0 ${315*pi/180}" />
+    
+	<xacro:roller rim="right" side="e"	xyz="${0.01355*scale}			${0*scale} 				${0.0055*scale}"	rpy="${-90*pi/180} 0 0" />
+    <xacro:roller rim="right" side="ne"	xyz="${0.00958129689*scale}		${0.00958129689*scale}	${-0.0055*scale}"	rpy="${-90*pi/180} 0 ${45*pi/180}" />
+    <xacro:roller rim="right" side="n"	xyz="${0*scale} 				${0.01355*scale} 		${0.0055*scale}"	rpy="${-90*pi/180} 0 ${90*pi/180}" />
+    <xacro:roller rim="right" side="nw"	xyz="${-0.00958129689*scale}	${0.00958129689*scale} 	${-0.0055*scale}"	rpy="${-90*pi/180} 0 ${135*pi/180}" />
+    <xacro:roller rim="right" side="w"	xyz="${-0.01355*scale}			${0*scale}				${0.0055*scale}"	rpy="${-90*pi/180} 0 ${180*pi/180}" />
+    <xacro:roller rim="right" side="sw"	xyz="${-0.00958129689*scale}	${-0.00958129689*scale}	${-0.0055*scale}"	rpy="${-90*pi/180} 0 ${225*pi/180}" />
+    <xacro:roller rim="right" side="s"	xyz="${0*scale}					${-0.01355*scale}		${0.0055*scale}"	rpy="${-90*pi/180} 0 ${270*pi/180}" />
+    <xacro:roller rim="right" side="se"	xyz="${0.00958129689*scale}		${-0.00958129689*scale}	${-0.0055*scale}"	rpy="${-90*pi/180} 0 ${315*pi/180}" />
+	
+	<xacro:roller rim="back" side="e"	xyz="${0.01355*scale}			${0*scale} 				${0.0055*scale}"	rpy="${-90*pi/180} 0 0" />
+    <xacro:roller rim="back" side="ne"	xyz="${0.00958129689*scale}		${0.00958129689*scale}	${-0.0055*scale}"	rpy="${-90*pi/180} 0 ${45*pi/180}" />
+    <xacro:roller rim="back" side="n"	xyz="${0*scale} 				${0.01355*scale} 		${0.0055*scale}"	rpy="${-90*pi/180} 0 ${90*pi/180}" />
+    <xacro:roller rim="back" side="nw"	xyz="${-0.00958129689*scale}	${0.00958129689*scale} 	${-0.0055*scale}"	rpy="${-90*pi/180} 0 ${135*pi/180}" />
+    <xacro:roller rim="back" side="w"	xyz="${-0.01355*scale}			${0*scale}				${0.0055*scale}"	rpy="${-90*pi/180} 0 ${180*pi/180}" />
+    <xacro:roller rim="back" side="sw"	xyz="${-0.00958129689*scale}	${-0.00958129689*scale}	${-0.0055*scale}"	rpy="${-90*pi/180} 0 ${225*pi/180}" />
+    <xacro:roller rim="back" side="s"	xyz="${0*scale}					${-0.01355*scale}		${0.0055*scale}"	rpy="${-90*pi/180} 0 ${270*pi/180}" />
+    <xacro:roller rim="back" side="se"	xyz="${0.00958129689*scale}		${-0.00958129689*scale}	${-0.0055*scale}"	rpy="${-90*pi/180} 0 ${315*pi/180}" />
+    
+</robot>
