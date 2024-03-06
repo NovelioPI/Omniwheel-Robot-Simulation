@@ -19,9 +19,9 @@
             <inertial>
                 <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
                 <mass value="${0.00113845 * scale}"/>
-                <inertia ixx="${2.53776e-08 * scale * scale}" ixy="0" ixz="0"
-                         iyy="${2.53776e-08 * scale * scale}" iyz="0"
-                         izz="${1.47666e-08 * scale * scale}"/>
+                <inertia ixx="${2.53776e-08 * scale * scale * scale * 6}" ixy="0" ixz="0"
+                         iyy="${2.53776e-08 * scale * scale * scale * 6}" iyz="0"
+                         izz="${1.47666e-08 * scale * scale * scale * 6}"/>
             </inertial>
         </link>
         <joint name="${rim}_rim_roller_${side}_joint" type="continuous">

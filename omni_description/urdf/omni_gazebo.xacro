@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <gazebo reference="base_link">
+        <material>Gazebo/White</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+
+    <gazebo reference="left_rim_link">
+        <material>Gazebo/Red</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="right_rim_link">
+        <material>Gazebo/Green</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="back_rim_link">
+        <material>Gazebo/Blue</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+
+    <gazebo reference="left_roller_e_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="left_roller_ne_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="left_roller_n_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="left_roller_nw_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="left_roller_w_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="left_roller_sw_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="left_roller_s_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="left_roller_se_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+
+    <gazebo reference="right_roller_e_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="right_roller_ne_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="right_roller_n_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="right_roller_nw_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="right_roller_w_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="right_roller_sw_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="right_roller_s_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="right_roller_se_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+
+    <gazebo reference="back_roller_e_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="back_roller_ne_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="back_roller_n_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="back_roller_nw_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="back_roller_w_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="back_roller_sw_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="back_roller_s_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="back_roller_se_link">
+        <material>Gazebo/Black</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+
+</robot>

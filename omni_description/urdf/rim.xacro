@@ -19,9 +19,9 @@
             <inertial>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
                 <mass value="${0.00835758 * scale}"/>
-                <inertia ixx="${6.63684e-07 * scale * scale}" ixy="0" ixz="0"
-                         iyy="${6.63684e-07 * scale * scale}" iyz="0"
-                         izz="${9.40333e-07 * scale * scale}"/>
+                <inertia ixx="${6.63684e-07 * scale * scale * scale * 6}" ixy="0" ixz="0"
+                         iyy="${6.63684e-07 * scale * scale * scale * 6}" iyz="0"
+                         izz="${9.40333e-07 * scale * scale * scale * 6}"/>
             </inertial>
         </link>
         <joint name="base_${side}_rim_joint" type="continuous">

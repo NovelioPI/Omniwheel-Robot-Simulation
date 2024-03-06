@@ -28,13 +28,14 @@
         <inertial>
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
             <mass value="${0.07862944645 * scale}"/>
-            <inertia ixx="${0.00002035985530754 * scale * scale}" ixy="0.0" ixz="0.0"
-                     iyy="${0.00002035985530754 * scale * scale}" iyz="0.0"
-                     izz="${0.00003945961663220 * scale * scale}"/>
+            <inertia ixx="${0.00002035985530754 * scale * scale * scale * 6}" ixy="0.0" ixz="0.0"
+                     iyy="${0.00002035985530754 * scale * scale * scale * 6}" iyz="0.0"
+                     izz="${0.00003945961663220 * scale * scale * scale * 6}"/>
         </inertial>
     </link>
 
 	<xacro:include filename="$(find omni_description)/urdf/rim.xacro" />
 	<xacro:include filename="$(find omni_description)/urdf/roller.xacro" />
+    <xacro:include filename="$(find omni_description)/urdf/omni_gazebo.xacro" />
     
 </robot>
